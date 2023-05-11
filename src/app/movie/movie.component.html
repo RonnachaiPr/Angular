@@ -1,0 +1,43 @@
+<div style="text-align: center;">
+    <pre>
+    <label>MovieID </label>
+    <input #NO_movie type="text "><br/>
+    <button (click)="findmovie(NO_movie.value)">Find</button>
+
+</pre>
+<html>
+    <head>
+      <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        th, td {
+          padding: 25px;
+          text-align: c;
+          border-bottom: 1px solid #ddd;
+        }
+      </style>
+    </head>
+    <body>
+      <table>
+        <thead>
+          <tr>
+            <th>MovieID</th>
+            <th>MovieName</th>
+            <th>TypeMovie</th>
+            <th>MoviePrice</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{MovieID}}</td>
+            <td>{{MovieName}}</td>
+            <td>{{MovieType}}</td>
+            <td>{{MoviePrice}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+  </html>
+  </div>
